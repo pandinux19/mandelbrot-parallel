@@ -43,6 +43,20 @@ OMP_PLACES=cores OMP_PROC_BIND=close ./proyecto_final
 ## **Commits**
 Para cumplir con la rúbrica del proyecto, el repositorio refleja un desarrollo incremental a través de un árbol de control de versiones limpio:
 
-```Initial commit: Sequential base code:```  Código base puramente secuencial (~22 segundos).
+```1. Initial commit: Sequential base code:```  Código base puramente secuencial (~22 segundos).
 
-```Add: AI Baseline parallel implementation with OpenMP:```  Primera aproximación de paralelización ingenua provista por IA (~9 segundos).
+```2. Add: AI Baseline parallel implementation with OpenMP:```  Primera aproximación de paralelización ingenua provista por IA (~9 segundos).
+
+```3. Optimization: Implement dynamic scheduler for load balancing:``` Corrección del desbalanceo de carga en Mandelbrot (~3.6 segundos).
+
+```4. Optimization: Add histogram with efficient reduction clause:```  Solución a la exclusión mutua (critical) y eliminación del fenómeno de False Sharing.
+
+```5. Final Optimization: Forced loop vectorization (SPMD) and compilation tweaks:```  Implementación final con directivas SIMD y optimizaciones -O3 de compilador (~3.07 segundos).
+
+Desarrollado por: [María Fernanda Frías González]
+
+Fecha: Mayo 2026
+
+Materia: Programación Paralela y Concurrente
+
+CUCEI - Universidad de Guadalajara
