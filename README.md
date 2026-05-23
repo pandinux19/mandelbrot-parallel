@@ -32,3 +32,17 @@ Para validar la correcta vectorización por hardware (registros AVX/SIMD) y ejec
 ### 1. Compilación con reporte de vectorización:
 ```bash
 g++ -O3 -march=native -std=c++17 -fopenmp -fopt-info-vec-optimized proyecto_final_concurrente.cpp -o proyecto_final
+```
+Nota: Al compilar, el flag -fopt-info-vec-optimized desplegará los mensajes del compilador confirmando la vectorización de bucles mediante vectores de 32 bytes.
+
+ ## **Ejecución con anclaje y afinidad de hilos**
+ ```bash
+OMP_PLACES=cores OMP_PROC_BIND=close ./proyecto_final
+```
+
+## **Commits**
+Para cumplir con la rúbrica del proyecto, el repositorio refleja un desarrollo incremental a través de un árbol de control de versiones limpio:
+
+```Initial commit: Sequential base code:```  Código base puramente secuencial (~22 segundos).
+
+```Add: AI Baseline parallel implementation with OpenMP:```  Primera aproximación de paralelización ingenua provista por IA (~9 segundos).
