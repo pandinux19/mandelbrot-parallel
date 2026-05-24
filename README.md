@@ -53,7 +53,7 @@ Para cumplir con la rúbrica del proyecto, el repositorio refleja un desarrollo 
 
 ```5. Final Optimization: Forced loop vectorization (SPMD) and compilation tweaks:```  Implementación final con directivas SIMD y optimizaciones -O3 de compilador (~3.07 segundos).
 
-Desarrollado por: [María Fernanda Frías González]
+Desarrollado por: María Fernanda Frías González, Alias Pandinux19
 
 Fecha: Mayo 2026
 
